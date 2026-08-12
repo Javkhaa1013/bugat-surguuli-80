@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="mn" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>80 жилийн ой — Дурсамжийн сан</title>
+<meta name="description" content="Сумын сургуулийн 80 жилийн ойн баярын арга хэмжээний зураг, бичлэгийн албан ёсны цахим сан.">
+<meta name="theme-color" content="#0b0e14">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="80 жилийн ой — Говь-Алтай аймгийн Бугатын сургууль">
+<meta property="og:description" content="1946–2026. Ойн баярын 617 зураг, 82 бичлэгийн цахим сан.">
+<meta property="og:image" content="https://drive.google.com/thumbnail?id=1pJndZUVIn-Qyd7D6bfocFgvm6bxDzZAC&sz=w1200">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23d4af5f'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='Georgia,serif' font-weight='700' fill='%2314100a'>80</text></svg>">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">
+      <div class="brand-mark">80</div>
+      <div class="brand-txt">
+        <div class="brand-name" id="brandName">Сургуулийн ой</div>
+        <div class="brand-sub" id="brandSub">Дурсамжийн сан</div>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#gallery">Зургууд</a>
+      <a href="#videos">Бичлэгүүд</a>
+      <a href="#history">Түүх</a>
+      <a href="#sources">Эх сурвалж</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeBtn" title="Гэрэл / Харанхуй горим" aria-label="Горим солих">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path class="ic-moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn" id="slideBtn" title="Слайд шоу эхлүүлэх" aria-label="Слайд шоу">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M8 5.5v13l10-6.5-10-6.5z"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Цэс">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#gallery">Зургууд</a>
+  <a href="#videos">Бичлэгүүд</a>
+  <a href="#history">Түүх</a>
+  <a href="#sources">Эх сурвалж</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg"><canvas id="stars"></canvas></div>
+  <div class="wrap hero-in">
+    <div>
+      <div class="hero-badge"><b id="badgeYears">80 ЖИЛ</b> <span id="badgeDate">Ойн баярын арга хэмжээ</span></div>
+      <h1>Найман арван жилийн <em>дурсамжийн сан</em></h1>
+      <p class="lede" id="heroLede">
+        Ойн баярын өдрүүдэд буулгасан зураг, бичлэг бүрийг нэг дор. Бүх агуулга
+        Google Drive болон YouTube дээрээ хадгалагдсан хэвээр — энэ хуудас зөвхөн
+        тэднийг эмх цэгцтэй, үзэхэд таатай болгож харуулна.
+      </p>
+      <div class="hero-cta">
+        <a href="#gallery" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="M3 16.5l5-4.5 4 3.5 3.5-3 5.5 5"/></svg>
+          Зургийн цомог үзэх
+        </a>
+        <a href="#videos" class="btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9.2l5 2.8-5 2.8z"/></svg>
+          Бичлэгүүд
+        </a>
+      </div>
+    </div>
+
+    <div class="emblem">
+      <div class="emblem-ring"></div><div class="emblem-ring"></div><div class="emblem-ring"></div>
+      <div class="emblem-core">
+        <div class="emblem-num" id="emblemNum">80</div>
+        <div class="emblem-label">Жилийн ой</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint"><span class="line"></span><span>Доош</span></div>
+</section>
+
+<!-- ============ ТООН ҮЗҮҮЛЭЛТ ============ -->
+<section class="stats" style="padding:60px 0">
+  <div class="wrap"><div class="stats-grid" id="statsGrid"></div></div>
+</section>
+
+<!-- ============ ЗУРГИЙН ЦОМОГ ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Google Drive</div>
+      <h2 class="sec-title">Зургийн цомог</h2>
+      <p class="sec-sub">Ойн арга хэмжээний бүх зураг ангиллаар нь. Дарж томруулан үзэх, сум товчоор гүйлгэх, эх файлыг нь Drive-аас татах боломжтой.</p>
+    </div>
+
+    <div class="gal-bar">
+      <div class="chips" id="chips"></div>
+      <div class="gal-tools">
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+          <input type="search" id="search" placeholder="Зураг хайх…" aria-label="Зураг хайх">
+        </label>
+      </div>
+    </div>
+
+    <div class="masonry" id="masonry"></div>
+    <div id="galState"></div>
+    <div class="more-wrap" id="moreWrap" hidden>
+      <button class="btn" id="moreBtn">Илүү ихийг үзэх</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ БИЧЛЭГҮҮД ============ -->
+<section id="videos" style="background:var(--ink-2);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">YouTube</div>
+      <h2 class="sec-title">Бичлэгийн сан</h2>
+      <p class="sec-sub">Ойн ёслол, урлагийн тоглолт, дурсамжийн ярилцлагууд — шууд энэ хуудсан дээрээс үзнэ.</p>
+    </div>
+    <div id="videoWrap"></div>
+  </div>
+</section>
+
+<!-- ============ ТҮҮХ ============ -->
+<section id="history">
+  <div class="wrap hist-grid">
+    <div>
+      <div class="sec-head" style="margin-bottom:40px">
+        <div class="eyebrow">Замнал</div>
+        <h2 class="sec-title">Найман арван жилийн товчоон</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+    <div class="rv quote-col" id="quotes"></div>
+  </div>
+</section>
+
+<!-- ============ ЭХ СУРВАЛЖ ============ -->
+<section id="sources" style="background:var(--ink-2);border-top:1px solid var(--line-soft)">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="eyebrow">Хадгалалт</div>
+      <h2 class="sec-title">Бүх агуулга хаана байдаг вэ?</h2>
+      <p class="sec-sub">Энэ сайт файл хуулбарладаггүй. Зураг бүр Drive дээрээ, бичлэг бүр YouTube дээрээ үлдэнэ — эндээс шууд эх сурвалж руу нь очно.</p>
+    </div>
+    <div class="src-grid">
+      <div class="src-card rv">
+        <div class="src-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M8.6 3h6.8l6.1 10.5h-6.8zM8.6 3L2.5 13.5 5.9 19.5 12 9zM5.9 19.5h12.2l3.4-6H9.3z"/></svg>
+        </div>
+        <h3>Google Drive — зургууд</h3>
+        <p>Бүх эх зураг өндөр чанараараа Drive хавтаст хадгалагдана. Энэ хуудас зөвхөн урьдчилан харах хувилбарыг нь дуудаж харуулдаг тул хурдан ачаалагдана.</p>
+        <a class="src-link" id="driveLink" href="#" target="_blank" rel="noopener">
+          Drive хавтас нээх
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="src-card rv">
+        <div class="src-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="M10 9.2l5.2 2.8-5.2 2.8z"/></svg>
+        </div>
+        <h3>YouTube — бичлэгүүд</h3>
+        <p>Бичлэгүүд YouTube суваг дээр байрлана. Ингэснээр интернэт удаан үед ч чанараа тохируулан үзэх, дурын төхөөрөмжөөс нээх боломжтой.</p>
+        <a class="src-link" id="ytLink" href="#" target="_blank" rel="noopener">
+          YouTube жагсаалт нээх
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="contribute" id="contribute" hidden></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand">
+          <div class="brand-mark">80</div>
+          <div class="brand-txt"><div class="brand-name" id="footName">Сургуулийн ой</div></div>
+        </div>
+        <p id="footNote">Ойн баярын арга хэмжээний албан ёсны зураг, бичлэгийн цахим сан.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h5>Хэсгүүд</h5>
+          <a href="#gallery">Зургийн цомог</a>
+          <a href="#videos">Бичлэгүүд</a>
+          <a href="#history">Түүхэн замнал</a>
+        </div>
+        <div class="foot-col">
+          <h5>Холбоо</h5>
+          <a href="#sources">Эх сурвалж</a>
+          <a id="footMail" href="#">И-мэйл</a>
+          <a id="footFb" href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="dedication" id="dedication" hidden></div>
+
+    <div class="foot-bot">
+      <span id="footCopy">© 2026 · Бүх эрх хуулиар хамгаалагдсан</span>
+      <span id="footCredit">Зураг: Google Drive · Бичлэг: YouTube</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Зураг харах">
+  <div class="lb-top">
+    <div class="lb-meta">
+      <b id="lbTitle"></b>
+      <small id="lbSub"></small>
+    </div>
+    <div class="lb-acts">
+      <button class="icon-btn" id="lbPlay" title="Слайд шоу (Space)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M8 5.5v13l10-6.5-10-6.5z"/></svg>
+      </button>
+      <button class="icon-btn" id="lbShare" title="Холбоос хуулах">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a4 4 0 0 0 6 .4l3-3a4 4 0 0 0-5.7-5.7L11.6 6.4"/><path d="M14 11a4 4 0 0 0-6-.4l-3 3a4 4 0 0 0 5.7 5.7l1.7-1.7"/></svg>
+      </button>
+      <a class="icon-btn" id="lbOpen" target="_blank" rel="noopener" title="Эх сурвалж дээр нээх">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></svg>
+      </a>
+      <button class="icon-btn" id="lbClose" title="Хаах (Esc)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="lb-stage" id="lbStage">
+    <div class="lb-media" id="lbMedia"></div>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Өмнөх">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Дараах">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <div class="lb-film" id="lbFilm"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="assets/js/data.js?v=2"></script>
+<script src="assets/js/app.js?v=2"></script>
+</body>
+</html>
